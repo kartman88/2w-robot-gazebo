@@ -5,7 +5,7 @@ from launch.substitutions import Command
 import os
 from ament_index_python.packages import get_package_share_path
 
-def generate_launch_description():
+def generate_launch_description(): #launch all the required nodes
 
     urdf_path = os.path.join(get_package_share_path('my_robot_description'),
                              'urdf', 'my_robot.urdf.xacro')
